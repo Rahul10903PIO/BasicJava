@@ -1,10 +1,17 @@
-package Core.Java.Day3;
+package com.core.java.week2.Day3;
 
 
 import java.util.ArrayList;
 import java.util.List;
 
-
+interface  vehicle<T>{
+    void type();
+}
+class Car implements vehicle{
+   public  void type(){
+        System.out.println("hi");
+    }
+}
 class PopSongs{
     public String name;
     public String singer;

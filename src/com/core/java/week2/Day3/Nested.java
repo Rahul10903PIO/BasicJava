@@ -1,4 +1,4 @@
-package Core.Java.Day3;
+package com.core.java.week2.Day3;
 
 
 //Nested Class

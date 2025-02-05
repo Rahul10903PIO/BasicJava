@@ -1,7 +1,8 @@
-package Core.Java.Day2;
+package com.core.java.week2.Day2;
 interface LivingBeing{
     void eat();
 }
+
 class Human implements LivingBeing{
     public void eat(){
         System.out.println("Human Eats");
@@ -10,8 +11,8 @@ class Human implements LivingBeing{
 }
 public class Interface {
     public static void main(String[] args){
-        Human h=new Human();
-        h.eat();
+//        C c=new C();
+//        c.print();
     }
 
 }

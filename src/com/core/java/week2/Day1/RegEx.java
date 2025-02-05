@@ -1,5 +1,4 @@
-package Core.Java.Day1;
-import java.util.regex.*;
+package com.core.java.week2.Day1;
 import java.util.Scanner;
 public class RegEx {
 

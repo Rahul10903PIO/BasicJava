@@ -1,4 +1,4 @@
-package Core.Java.Day2;
+package com.core.java.week2.Day2;
 
 // This class Performing Run time polymorphism
 class LivingBeings{

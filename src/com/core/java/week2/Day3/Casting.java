@@ -1,4 +1,4 @@
-package Core.Java.Day3;
+package com.core.java.week2.Day3;
 
 class A{
 
@@ -24,6 +24,6 @@ public class Casting {
         A a=new B();
         B b=(B) a;
         a.display();
-        b.show();
+        b.display();
     }
 }

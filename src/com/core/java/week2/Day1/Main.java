@@ -1,4 +1,4 @@
-package Core.Java.Day1;
+package com.core.java.week2.Day1;
 
 import java.util.Arrays;
 import java.util.Scanner;

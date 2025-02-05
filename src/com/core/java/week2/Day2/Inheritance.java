@@ -1,4 +1,4 @@
-package Core.Java.Day2;
+package com.core.java.week2.Day2;
 
 
 class Vehicle{

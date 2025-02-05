@@ -1,5 +1,4 @@
-package Core.Java.Day3;
-import java.io.*;
+package com.core.java.week2.Day3;
 
 enum Department{
     HR,Sales,It,Finance;
