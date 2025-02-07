@@ -1,4 +1,4 @@
-package com.core.java.week3.Day1.Day2;
+package com.core.java.week3.Day2;
 class Node<T> {
     public T data;
     public Node next;

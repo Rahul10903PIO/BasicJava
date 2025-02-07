@@ -1,4 +1,4 @@
-package com.core.java.week3.Day1.Day2;
+package com.core.java.week3.Day2;
 import java.util.*;
 class Song{
     public String name;
