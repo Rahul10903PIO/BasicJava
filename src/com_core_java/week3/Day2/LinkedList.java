@@ -17,7 +17,8 @@ class NodeDl<T>{
         prev=null;
     }
 }
-class DoublyLinkedList<T>{
+class
+DoublyLinkedList<T>{
     public NodeDl head;
     public NodeDl tail;
 

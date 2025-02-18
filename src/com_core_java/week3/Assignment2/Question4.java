@@ -1,4 +1,5 @@
 package com.core.java.week3.Assignment2;
+
 class Node<T> {
     T data;
     Node prev;
@@ -13,12 +14,11 @@ class EmptyPlaylist extends  Exception{
     public EmptyPlaylist(){
         super("Playlist is Empty");
     }
-
 }
 //Song Class
 class Song {
-    public String name;
-    public String singerName;
+    private String name;
+    private String singerName;
     private int duration;
     public Song(String name,String singerName, int duration) {
         this.name=name;
@@ -28,11 +28,36 @@ class Song {
     public static void getSongInfo(Song s){
         System.out.println(String.format("Song Name : %s\nSinger Name : %s\nDuration : %d\n",s.name,s.singerName,s.duration));
     }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getSingerName() {
+        return singerName;
+    }
+
+    public void setSingerName(String singerName) {
+        this.singerName = singerName;
+    }
+
+    public int getDuration() {
+        return duration;
+    }
+
+    public void setDuration(int duration) {
+        this.duration = duration;
+    }
 }
 class MusicPlaylist {
     Node<Song> head;
     Node<Song> tail;
     Node<Song> currSong;
+
     public void addSong(Song s){
         Node<Song> newSong=new Node<>(s);
         if(head==null){
@@ -74,7 +99,7 @@ class MusicPlaylist {
         if (head == null) {
             throw new EmptyPlaylist();
         } else {
-            System.out.println(currSong.data.name + " is playing..");
+            System.out.println(currSong.data.getName() + " is playing..");
         }
     }
 

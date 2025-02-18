@@ -5,10 +5,10 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
-class Student{
+class Student {
     public int rollNo;
     public String name;
-    public Student(int rollNo,String name){
+    public Student(int rollNo,String name) {
         this.name=name;
         this.rollNo=rollNo;
     }
@@ -22,22 +22,21 @@ class Student{
     }
 }
 public class ComparatorDemo {
-    public static void main(String[] args){
-        char a='a';
-        int rollNo=1;
+    public static void main(String[] args) {
+
         List<Student> list=new ArrayList<>();
 
-        for(int i=0;i<4;i++){
-            list.add(new Student(rollNo,""+a));
-            a++;
-            rollNo++;
-        }
-        Collections.sort(list,new Comparator<Student>(){
-            public int compare(Student s1,Student s2){
-                return s2.rollNo-s1.rollNo;
-
+        list.add(new Student(12,"Rahul"));
+        list.add(new Student(1,"Ritesh"));
+        list.add(new Student(3,"Mohit"));
+        list.add(new Student(4,"Tushar"));
+        Collections.sort(list, new Comparator<Student>() {
+            @Override
+            public int compare(Student o1, Student o2) {
+                return o1.rollNo-o2.rollNo;
             }
         });
+
         System.out.println(list);
     }
 }

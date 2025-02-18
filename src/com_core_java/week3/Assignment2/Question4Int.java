@@ -79,6 +79,23 @@ class LinkedList{
         }
         return result;
     }
+    public void addAtPosition(int idx,int data) throws EmptyPlaylist{
+        NodeSl newNode=new NodeSl(data);
+        if(idx==1) {
+            addFirst(data);
+        } else {
+            int i=1;
+            NodeSl temp=head;
+            while(i<idx-1 && temp!=null){
+                temp=temp.next;
+                i++;
+            }
+            if(temp==null) throw new EmptyPlaylist();
+            newNode.next=temp.next;
+            temp.next=newNode;
+        }
+    }
+
     public NodeSl arrayListToLinkedList(List<Integer> list) {
         NodeSl head1=null;
         NodeSl temp=null;
@@ -96,14 +113,15 @@ class LinkedList{
         return head;
     }
 }
+
 public class Question4Int {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception{
 
         LinkedList ll=new LinkedList();
         List<Integer> list= Arrays.asList(1,2,3,4,5);
         NodeSl head=ll.arrayListToLinkedList(list);
         NodeSl temp=head;
-
+        ll.addAtPosition(2,12);
         while(temp!=null){
             System.out.println(temp.data);
             temp=temp.next;
